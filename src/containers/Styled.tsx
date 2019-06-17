@@ -18,6 +18,11 @@ export const Card = styled.div`
 	flex-direction: column;
 	justify-content: center;
   align-items: center;
+
+	@media(max-width: 768px) {
+		padding: 32px 24px 48px 24px;
+
+	}
 `;
 
 export const Headline = styled.h3`
@@ -25,6 +30,11 @@ export const Headline = styled.h3`
 	font-weight: 900;
 	color: rgba(38, 38, 38, 0.8);
 	margin-bottom: 32px;
+
+	@media(max-width: 768px) {
+		margin: 0 0 20px 0;
+		font-size: 20px;
+	}
 `;
 
 export const Input = styled.input`
@@ -52,6 +62,19 @@ export const Input = styled.input`
 		color: #262626;
 		transition: 144ms ease-in-out;
 	}
+
+	@media(max-width: 768px) {
+		min-width: 180px;
+		margin: 12px 0;
+
+		:focus {
+			outline: none !important;
+			border: solid 1px #ed4159;
+			color: #ed4159;
+			background-color: #f1f1f1;
+			transition: 144ms ease-in-out;
+		}
+	}
 `;
 
 export const ErrorWrapper = styled.p`
@@ -63,6 +86,12 @@ export const ErrorWrapper = styled.p`
 	font-size: 14px;
 	font-weight: 500;
 	text-align: left;
+
+	@media(max-width: 768px) {
+		font-size: 12px;
+		min-width: 180px;
+		margin: 1px;
+	}
 `;
 
 export const Button = styled.button`
@@ -97,6 +126,10 @@ export const Button = styled.button`
 		box-shadow: 0 2px 10px 0 rgba(237, 65, 89, 0.5);
 		transition: 89ms ease-in-out;
 	}
+
+	@media(max-width: 768px) {
+		margin-top: 20px;
+	}
 `;
 
 export const Avatar = styled.img`
@@ -105,4 +138,10 @@ export const Avatar = styled.img`
 	border: solid 1px #979797;
 	border-radius: 100%;
 	margin: 0 188px;
+
+	@media(max-width: 768px) {
+		width: 86px;
+		height: 86px;
+		margin: 0 0 24px 0;
+	}
 `;
